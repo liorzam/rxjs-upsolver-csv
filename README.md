@@ -10,7 +10,7 @@ can be modified by explicit or relative path like:
 ``` export CSV_PATH=./data```
 ``` export CSV_PATH=/workdir/csv/data```
 
-Talked with Shani and decided that ```filter``` and ```pluck``` will work throgth field name
+```filter``` and ```pluck``` will work throgth field name
 *filter* - (fieldName, desiredValue)
 *pluck* - (fieldName)
 
