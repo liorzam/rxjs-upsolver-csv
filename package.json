@@ -1,0 +1,31 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/symlink-dir ./lib node_modules/lib",
+    "eslint": "./node_modules/.bin/eslint --fix --ignore-path .gitignore .",
+    "start": "node example.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint-config-gns-server": "^1.0.2",
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "config": "^3.0.0",
+    "csv-stream": "^0.2.0",
+    "express": "^4.17.1",
+    "gns-log": "^1.0.1",
+    "js-yaml": "^3.13.1",
+    "rx-from-csv": "^1.0.0",
+    "rxjs": "^6.5.3",
+    "stream-to-observable": "^0.2.0",
+    "symlink-dir": "^3.0.0"
+  }
+}
